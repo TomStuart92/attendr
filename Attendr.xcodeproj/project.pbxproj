@@ -18,6 +18,7 @@
 		D83979941DC1FA5500FD3EB8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D83979931DC1FA5500FD3EB8 /* Main.storyboard */; };
 		D83979961DC2011A00FD3EB8 /* EventsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83979951DC2011A00FD3EB8 /* EventsController.swift */; };
 		DF8637F283B3590BB3E4FADA /* Pods_Attendr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAFB47F2A685D6D42B50B957 /* Pods_Attendr.framework */; };
+		E2F2F5A51DC215ED007457E7 /* Attendr_SignIn.m in Sources */ = {isa = PBXBuildFile; fileRef = E2F2F5A41DC215ED007457E7 /* Attendr_SignIn.m */; };
 		F89382583E5B442575B91896 /* Pods_AttendrTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B53DB01A379B21796DC3EC60 /* Pods_AttendrTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +31,13 @@
 			remoteInfo = Attendr;
 		};
 		36F7C3CE1DBE3B9900E99997 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 36F7C3A61DBE3B9900E99997 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 36F7C3AD1DBE3B9900E99997;
+			remoteInfo = Attendr;
+		};
+		E2F2F5A71DC215ED007457E7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 36F7C3A61DBE3B9900E99997 /* Project object */;
 			proxyType = 1;
@@ -62,6 +70,9 @@
 		D83979931DC1FA5500FD3EB8 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		D83979951DC2011A00FD3EB8 /* EventsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsController.swift; sourceTree = "<group>"; };
 		E0E3E44331FE9FD0A0FD120F /* Pods-AttendrUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AttendrUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AttendrUITests/Pods-AttendrUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E2F2F5A21DC215ED007457E7 /* Attendr-SignIn.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Attendr-SignIn.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2F2F5A41DC215ED007457E7 /* Attendr_SignIn.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Attendr_SignIn.m; sourceTree = "<group>"; };
+		E2F2F5A61DC215ED007457E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E962639EB9D89340A86DB4F3 /* Pods-Attendr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Attendr.release.xcconfig"; path = "Pods/Target Support Files/Pods-Attendr/Pods-Attendr.release.xcconfig"; sourceTree = "<group>"; };
 		FAFB47F2A685D6D42B50B957 /* Pods_Attendr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Attendr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -91,6 +102,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E2F2F59F1DC215ED007457E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -100,6 +118,7 @@
 				36F7C3B01DBE3B9900E99997 /* Attendr */,
 				36F7C3C51DBE3B9900E99997 /* AttendrTests */,
 				36F7C3D01DBE3B9900E99997 /* AttendrUITests */,
+				E2F2F5A31DC215ED007457E7 /* Attendr-SignIn */,
 				36F7C3AF1DBE3B9900E99997 /* Products */,
 				CAA7D8182A19FB601DE2765C /* Pods */,
 				C05177A8AC1B3A9EFE88D765 /* Frameworks */,
@@ -112,6 +131,7 @@
 				36F7C3AE1DBE3B9900E99997 /* Attendr.app */,
 				36F7C3C21DBE3B9900E99997 /* AttendrTests.xctest */,
 				36F7C3CD1DBE3B9900E99997 /* AttendrUITests.xctest */,
+				E2F2F5A21DC215ED007457E7 /* Attendr-SignIn.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -171,6 +191,15 @@
 				E0E3E44331FE9FD0A0FD120F /* Pods-AttendrUITests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		E2F2F5A31DC215ED007457E7 /* Attendr-SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				E2F2F5A41DC215ED007457E7 /* Attendr_SignIn.m */,
+				E2F2F5A61DC215ED007457E7 /* Info.plist */,
+			);
+			path = "Attendr-SignIn";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,6 +267,24 @@
 			productReference = 36F7C3CD1DBE3B9900E99997 /* AttendrUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		E2F2F5A11DC215ED007457E7 /* Attendr-SignIn */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2F2F5AB1DC215ED007457E7 /* Build configuration list for PBXNativeTarget "Attendr-SignIn" */;
+			buildPhases = (
+				E2F2F59E1DC215ED007457E7 /* Sources */,
+				E2F2F59F1DC215ED007457E7 /* Frameworks */,
+				E2F2F5A01DC215ED007457E7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E2F2F5A81DC215ED007457E7 /* PBXTargetDependency */,
+			);
+			name = "Attendr-SignIn";
+			productName = "Attendr-SignIn";
+			productReference = E2F2F5A21DC215ED007457E7 /* Attendr-SignIn.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -268,6 +315,12 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = 36F7C3AD1DBE3B9900E99997;
 					};
+					E2F2F5A11DC215ED007457E7 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 3889JQSEUN;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 36F7C3AD1DBE3B9900E99997;
+					};
 				};
 			};
 			buildConfigurationList = 36F7C3A91DBE3B9900E99997 /* Build configuration list for PBXProject "Attendr" */;
@@ -286,6 +339,7 @@
 				36F7C3AD1DBE3B9900E99997 /* Attendr */,
 				36F7C3C11DBE3B9900E99997 /* AttendrTests */,
 				36F7C3CC1DBE3B9900E99997 /* AttendrUITests */,
+				E2F2F5A11DC215ED007457E7 /* Attendr-SignIn */,
 			);
 		};
 /* End PBXProject section */
@@ -309,6 +363,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		36F7C3CB1DBE3B9900E99997 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2F2F5A01DC215ED007457E7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -483,6 +544,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E2F2F59E1DC215ED007457E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2F2F5A51DC215ED007457E7 /* Attendr_SignIn.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -495,6 +564,11 @@
 			isa = PBXTargetDependency;
 			target = 36F7C3AD1DBE3B9900E99997 /* Attendr */;
 			targetProxy = 36F7C3CE1DBE3B9900E99997 /* PBXContainerItemProxy */;
+		};
+		E2F2F5A81DC215ED007457E7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 36F7C3AD1DBE3B9900E99997 /* Attendr */;
+			targetProxy = E2F2F5A71DC215ED007457E7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -689,6 +763,32 @@
 			};
 			name = Release;
 		};
+		E2F2F5A91DC215ED007457E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 3889JQSEUN;
+				INFOPLIST_FILE = "Attendr-SignIn/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Attendr.Attendr-SignIn";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Attendr;
+			};
+			name = Debug;
+		};
+		E2F2F5AA1DC215ED007457E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 3889JQSEUN;
+				INFOPLIST_FILE = "Attendr-SignIn/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Attendr.Attendr-SignIn";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Attendr;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -727,6 +827,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		E2F2F5AB1DC215ED007457E7 /* Build configuration list for PBXNativeTarget "Attendr-SignIn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2F2F5A91DC215ED007457E7 /* Debug */,
+				E2F2F5AA1DC215ED007457E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

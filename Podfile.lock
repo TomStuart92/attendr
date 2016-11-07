@@ -25,13 +25,22 @@ PODS:
     - FBSDKCoreKit
   - FBSDKShareKit (4.16.1):
     - FBSDKCoreKit
+  - Mockingjay (1.3.1):
+    - Mockingjay/Core (= 1.3.1)
+    - Mockingjay/XCTest (= 1.3.1)
+  - Mockingjay/Core (1.3.1):
+    - URITemplate (~> 1.3)
+  - Mockingjay/XCTest (1.3.1):
+    - Mockingjay/Core
   - SwiftyJSON (3.1.1)
+  - URITemplate (1.4.0)
 
 DEPENDENCIES:
   - Alamofire (= 4.0)
   - FacebookCore
   - FacebookLogin
   - FacebookShare
+  - Mockingjay
   - SwiftyJSON
 
 SPEC CHECKSUMS:
@@ -43,8 +52,10 @@ SPEC CHECKSUMS:
   FBSDKCoreKit: 6feac4e8921ccd7afa83fb1df6291dc6eec42c7c
   FBSDKLoginKit: 469a56cebe2e1ed62b1621d0b155970fd6aac2d8
   FBSDKShareKit: 53af0239b5bd2ebf191f32f75991245a208cc982
+  Mockingjay: e6ffe6106591d2555025842b1b655decc124f0ca
   SwiftyJSON: f0be2e604f83e8405a624e9f891898bf6ed4e019
+  URITemplate: e2a2a0f9d398834fde67214b491c2c925c9baa06
 
-PODFILE CHECKSUM: 773f8107118f2f540f8fa50348630ff66e360b36
+PODFILE CHECKSUM: d80daa0c34fd8a61855561754fbfd3e92da45ae0
 
 COCOAPODS: 1.1.1
