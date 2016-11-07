@@ -10,9 +10,16 @@ target 'Attendr' do
 pod 'FacebookCore'
 pod 'FacebookLogin'
 pod 'FacebookShare'
+<<<<<<< HEAD
 pod 'Alamofire', '4.0'
 pod 'SwiftyJSON'
 pod 'Mockingjay'
+=======
+pod 'Firebase/Core'
+pod 'JSQMessagesViewController'
+pod 'Firebase/Database'
+pod 'Firebase/Auth'
+>>>>>>> a64407d5e27153f939cfc2fc470b44a46df73a64
 
   target 'AttendrTests' do
     inherit! :search_paths
